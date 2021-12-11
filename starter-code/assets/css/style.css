@@ -1,0 +1,113 @@
+@import "fonts.css";
+@import "typography.css";
+@import "nav.css";
+
+body {
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	padding: 25px 0;
+}
+
+@media only screen and (max-width: 1230px) {
+	.wrapper {
+		margin: auto 15px;
+	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.tropical-blue {
+	color: #D0D6F9;
+}
+
+
+
+body.homepage {
+	background-image: url(../media/home/background-home-desktop.jpg);
+	background-size: cover;
+}
+
+.homepage .wrapper {
+	margin-top: 10vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage .content-wrapper {
+	max-width: 450px;
+}
+
+.homepage .explore-box-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 450px;
+	width: 450px;
+	background: transparent;
+	border-radius: 50%;
+}
+
+.homepage .explore-box-wrapper:hover {
+	background:rgba(255,255,255, 0.1);
+	mix-blend-mode: normal;
+}
+
+.homepage .explore-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 274px;
+	width: 274px;
+	background: #FFFFFF;
+	border-radius: 50%;
+}
+
+.homepage .explore-button {
+	font-family: Bellefair;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 37px;
+	letter-spacing: 2px;
+	color: #0B0D17;
+
+	padding: 2px;
+
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1366px) {
+	body.homepage {
+		background-size: auto;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	body.homepage {
+		background-image: url(../media/home/background-home-tablet.jpg);
+	}
+
+	.homepage .wrapper {
+		display: block;
+		text-align: center;
+		width: fit-content;
+		margin: 10vw auto;
+	}
+
+	.homepage .explore-box-wrapper {
+		margin: 5vw auto 0 auto;
+	}
+}
+
