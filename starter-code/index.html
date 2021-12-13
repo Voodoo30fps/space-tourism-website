@@ -6,9 +6,23 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     
     <title>Frontend Mentor | Space tourism website</title>
+
+    <script>
+   
+         $(document).ready(function() {
+
+            $("#nav-toggler").click(function(){
+                $("#nav-toggler").html($("#nav-toggler").html() == '☰' ? '⨯' : '☰');
+                $(".nav-links").toggle( 'slow', function(){});
+            });
+         });
+           
+      </script>
   </head>
   <body class="homepage">
 
@@ -23,6 +37,7 @@
         <a class="nav-text"><span class="counter">02</span> Crew</a>
         <a class="nav-text"><span class="counter">03</span> Technology</a>
       </div>
+      <span id="nav-toggler" class="toggler __nav-mobile">&#9776;</span>
     </nav>
 
     <div class="wrapper">

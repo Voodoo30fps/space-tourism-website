@@ -57,8 +57,8 @@ body.homepage {
 	border-radius: 50%;
 }
 
-.homepage .explore-box-wrapper:hover {
-	background:rgba(255,255,255, 0.1);
+.homepage .explore-box-wrapper:hover, .homepage .explore-box-wrapper:active {
+	background: rgba(255,255,255, 0.1);
 	mix-blend-mode: normal;
 }
 
@@ -95,15 +95,11 @@ body.homepage {
 }
 
 @media only screen and (max-width: 1024px) {
-	body.homepage {
-		background-image: url(../media/home/background-home-tablet.jpg);
-	}
-
 	.homepage .wrapper {
 		display: block;
 		text-align: center;
 		width: fit-content;
-		margin: 10vw auto;
+		margin: 5vw auto;
 	}
 
 	.homepage .explore-box-wrapper {
@@ -111,3 +107,39 @@ body.homepage {
 	}
 }
 
+@media only screen and (max-width:  768px) {
+	body.homepage {
+		background-image: url(../media/home/background-home-tablet.jpg);
+		background-size: cover;
+	}
+
+	.homepage .explore-box {
+	    height: 242px;
+	    width: 242px;
+	}
+}
+
+@media only screen and (max-width:  425px) {
+	body.homepage {
+		background-image: url(../media/home/background-home-mobile.jpg);
+	}
+
+	.homepage .wrapper {
+		margin: 5vw 1.5rem;
+	}
+
+	.homepage .explore-box-wrapper {
+		height: 200px;
+		width: 200px;
+	}
+
+	.homepage .explore-box {
+		width: 150px;
+		height: 150px;
+	}
+
+	.homepage .explore-button {
+		font-size: 20px;
+		line-height: 23px;
+	}
+}
