@@ -7,13 +7,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
     <script type="text/javascript" src="./assets/js/nav.js" defer></script>
+    <script type="text/javascript" src="./assets/js/switcher.js" defer></script>
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/destination.css">
     
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body class="destination">
+  <body class="destination-page">
 
     <nav aria-expanded="false">
       <a href="index.html" class="logo">
@@ -33,23 +34,41 @@
     </nav>
 
     <div class="wrapper">
-      <h5 class="white"><span>01</span> Pick your destination</h5>
-      <div class="slider">
-        <div class="slide current-slide">
-          <div class="image-wrapper">
-            <picture>
-              <source srcset="assets/media/destination/image-moon.webp" type="image/webp">
-              <source srcset="assets/media/destination/image-moon.jpg" type="image/jpeg">
-              <img src="assets/media/destination/image-moon.jpg">
-            </picture>
+      <h5 class="content-title white"><span>01</span> Pick your destination</h5>
+
+      <div class="destination switcher">
+        <div class="image-wrapper">
+          <picture class="active">
+            <source srcset="assets/media/destination/image-moon.webp" type="image/webp">
+            <source srcset="assets/media/destination/image-moon.jpg" type="image/jpeg">
+            <img src="assets/media/destination/image-moon.jpg">
+          </picture>
+          <picture>
+            <source srcset="assets/media/destination/image-mars.webp" type="image/webp">
+            <source srcset="assets/media/destination/image-mars.jpg" type="image/jpeg">
+            <img src="assets/media/destination/image-mars.jpg">
+          </picture>
+          <picture>
+            <source srcset="assets/media/destination/image-europa.webp" type="image/webp">
+            <source srcset="assets/media/destination/image-europa.jpg" type="image/jpeg">
+            <img src="assets/media/destination/image-europa.jpg">
+          </picture>
+          <picture>
+            <source srcset="assets/media/destination/image-titan.webp" type="image/webp">
+            <source srcset="assets/media/destination/image-titan.jpg" type="image/jpeg">
+            <img src="assets/media/destination/image-titan.jpg">
+          </picture>
+        </div>
+
+        <div class="content-wrapper">
+          <div class="navigation">
+            <a class="active">MOON</a>
+            <a>MARS</a>
+            <a>EUROPA</a>
+            <a>TITAN</a>
           </div>
-          <div class="content-wrapper">
-            <div class="navigation">
-              <a class="active">MOON</a>
-              <a>MARS</a>
-              <a>EUROPA</a>
-              <a>TITAN</a>
-            </div>
+
+          <div class="content active">
             <h2>MOON</h2>
             <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
             <span class="divider"></span>
@@ -64,8 +83,58 @@
               </div>
             </div>
           </div>
+
+          <div class="content">
+            <h2>MARS</h2>
+            <p>Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+            <span class="divider"></span>
+            <div class="summary">
+              <div>
+                <h2 class="subheading tropical-blue">AVG. DISTANCE</h2>
+                <h1 class="subheading">225 mil. km</h1>
+              </div>
+              <div>
+                <h2 class="subheading tropical-blue">Est. travel time</h2>
+                <h1 class="subheading">9 months</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2>EUROPA</h2>
+            <p>The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+            <span class="divider"></span>
+            <div class="summary">
+              <div>
+                <h2 class="subheading tropical-blue">AVG. DISTANCE</h2>
+                <h1 class="subheading">628 mil. km</h1>
+              </div>
+              <div>
+                <h2 class="subheading tropical-blue">Est. travel time</h2>
+                <h1 class="subheading">3 years</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2>TITAN</h2>
+            <p>The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+            <span class="divider"></span>
+            <div class="summary">
+              <div>
+                <h2 class="subheading tropical-blue">AVG. DISTANCE</h2>
+                <h1 class="subheading">1.6 bil. km</h1>
+              </div>
+              <div>
+                <h2 class="subheading tropical-blue">Est. travel time</h2>
+                <h1 class="subheading">7 years</h1>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
+
     </div>
   </body>
 </html>
