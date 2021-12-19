@@ -3,9 +3,16 @@ body.destination-page {
 	background-size: cover;
 }
 
-h5 span {
-	mix-blend-mode: normal;
-	opacity: 0.25;
+@media only screen and (max-width: 768px) {
+	body.destination-page {
+		background-image: url(../media/destination/background-destination-tablet.jpg);
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	body.destination-page {
+		background-image: url(../media/destination/background-destination-mobile.jpg);
+	}
 }
 
 .destination {

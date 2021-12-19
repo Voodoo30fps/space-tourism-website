@@ -30,3 +30,8 @@ body .tropical-blue {
 body .white {
 	color: #FFFFFF;
 }
+
+h5 > span {
+	mix-blend-mode: normal;
+	opacity: 0.25;
+}
