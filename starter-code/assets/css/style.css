@@ -2,6 +2,10 @@
 @import "typography.css";
 @import "nav.css";
 
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 }
