@@ -22,6 +22,7 @@ body.crew-page {
 .crew {
 	display: flex;
 	flex-direction: row-reverse;
+	margin-top: 1rem;
 }
 
 .crew > * {
@@ -141,7 +142,7 @@ body.crew-page {
 
 @media only screen and (max-width: 425px) {
 	.crew {
-	    flex-direction: column;
+    flex-direction: column;
 	}
 
 	.crew .image-wrapper {
